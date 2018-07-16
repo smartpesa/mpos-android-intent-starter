@@ -29,7 +29,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.1.1'
     compile 'com.android.support:design:24.1.1'
-    compile('com.smartpesa:spconnect:2.1.1') {
+    compile('com.smartpesa:spconnect:2.2.0-SNAPSHOT-2') {
         changing = true;
     }
 }
