@@ -2,9 +2,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.smartpesa.sampleintent.MainActivity">
+
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/lastTransaction"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:title="@string/last_transaction"
+        app:showAsAction="always" />
+
 </menu>

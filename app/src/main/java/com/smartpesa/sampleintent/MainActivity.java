@@ -13,7 +13,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,6 +24,8 @@ import java.math.BigDecimal;
 public class MainActivity extends AppCompatActivity {
 
     private static final int TRANSACTION_REQUEST_CODE = 1001;
+    private static final int LAST_TRANSACTION_REQUEST_CODE = 1002;
+
     public static final String TAX_1_TYPE = "IVA";
     public static final String TAX_2_TYPE = "IAC";
     private EditText amountEt, tipsEt, tax1Et, tax2Et, externalReferenceEt;
@@ -104,11 +105,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == TRANSACTION_REQUEST_CODE) {
+        if (requestCode == TRANSACTION_REQUEST_CODE ) {
             if (data == null) {
                 // This can happen if SmartPesa was uninstalled or crashed while we're waiting for a
                 // result.
-                showSnackbar("No result from SmartPesa App.");
+                showSnackbar("No result from App.");
                 return;
             } else if (resultCode == RESULT_OK) {
                 // Parse successful transaction data.
@@ -118,6 +119,20 @@ public class MainActivity extends AppCompatActivity {
                 // Parse failed transaction data.
                 TransactionError error = SpConnect.parseErrorTransaction(data);
                 onFail(error);
+            }
+        } else if (requestCode == LAST_TRANSACTION_REQUEST_CODE) {
+            if (data == null) {
+                // This can happen if SmartPesa was uninstalled or crashed while we're waiting for a
+                // result.
+                showSnackbar("No result from App.");
+                return;
+            } else if (resultCode == RESULT_OK) {
+                // Parse successful transaction data.
+                TransactionResult result = SpConnect.parseLastTransaction(data);
+                onLastTransaction(result);
+            } else {
+                // Parse failed transaction data.
+                showSnackbar("No last transaction from App.");
             }
         }
     }
@@ -142,16 +157,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onSuccess(TransactionResult result) {
-        String resultString = "Success\n" +
-                result.reference() + "\n" +
-                result.type() + "\n" +
-                result.responseDescription() + "\n" +
-                result.responseCode() + "\n" +
-                result.datetime() + "\n" +
-                result.currency().symbol() + " " + result.amount() + "\n" +
-                result.card().pan() + ": " + result.card().holderName() + "\n" +
-                result.description() + "\n";
-        this.result.setText(resultString);
+        if (result != null) {
+            String resultString = "Success\n" +
+                    result.reference() + "\n" +
+                    result.type() + "\n" +
+                    result.responseDescription() + "\n" +
+                    result.responseCode() + "\n" +
+                    result.datetime() + "\n" +
+                    result.currency().symbol() + " " + result.amount() + "\n" +
+                    result.card().pan() + ": " + result.card().holderName() + "\n" +
+                    result.description() + "\n";
+            this.result.setText(resultString);
+        }
+    }
+
+
+    private void onLastTransaction(TransactionResult result) {
+        if (result != null) {
+            String resultString = "Last Transaction\n" +
+                    result.reference() + "\n" +
+                    result.type() + "\n" +
+                    result.responseDescription() + "\n" +
+                    result.responseCode() + "\n" +
+                    result.datetime() + "\n" +
+                    result.currency().symbol() + " " + result.amount() + "\n" +
+                    result.card().pan() + ": " + result.card().holderName() + "\n" +
+                    result.description() + "\n";
+            this.result.setText(resultString);
+        }
     }
 
     @Override
@@ -169,7 +202,11 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.lastTransaction) {
+
+            Intent intent = SpConnect.getLastTransaction();
+            startActivityForResult(intent, LAST_TRANSACTION_REQUEST_CODE);
+
             return true;
         }
 

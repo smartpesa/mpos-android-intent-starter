@@ -6,4 +6,5 @@
     <string name="tax1">Tax 1</string>
     <string name="tax2">Tax 2</string>
     <string name="external_reference">External Reference</string>
+    <string name="last_transaction">Last Transaction</string>
 </resources>
