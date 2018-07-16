@@ -13,6 +13,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int TRANSACTION_REQUEST_CODE = 1001;
     public static final String TAX_1_TYPE = "IVA";
     public static final String TAX_2_TYPE = "IAC";
-    private EditText amountEt, tipsEt, tax1Et, tax2Et;
+    private EditText amountEt, tipsEt, tax1Et, tax2Et, externalReferenceEt;
     private FloatingActionButton fab;
     private TextView result;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         tax1Et = (EditText) findViewById(R.id.tax1);
         tax2Et = (EditText) findViewById(R.id.tax2);
         result = (TextView) findViewById(R.id.result);
+        externalReferenceEt = (EditText) findViewById(R.id.external_reference);
         fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             BigDecimal tips = new BigDecimal(tipsEt.getText().toString());
             BigDecimal tax1 = new BigDecimal(tax1Et.getText().toString());
             BigDecimal tax2 = new BigDecimal(tax2Et.getText().toString());
+            String externalReference = externalReferenceEt.getText().toString();
 
             // Create transaction argument.
             TransactionArgument argument = TransactionArgument.builder()
@@ -71,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     .tax1Type(TAX_1_TYPE)
                     .tax2Amount(tax2)
                     .tax2Type(TAX_2_TYPE)
+                    .externalReference(externalReference)
                     .build();
 
             // Create intent from transaction argument.

@@ -80,13 +80,31 @@
 
     </android.support.design.widget.TextInputLayout>
 
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/external_reference_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tax2_til"
+        android:hint="@string/external_reference">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/external_reference"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="test data"/>
+
+    </android.support.design.widget.TextInputLayout>
+
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tax2_til"
+        android:layout_below="@id/external_reference_til"
         android:paddingBottom="16dp"
         android:paddingTop="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         tools:text="Lorem ipsum dolor sit amet" />
+
 </RelativeLayout>
