@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SampleIntent</string>
+    <string name="app_name">Intent starter</string>
     <string name="action_settings">Settings</string>
     <string name="amount">Amount</string>
     <string name="tips">Tips</string>
