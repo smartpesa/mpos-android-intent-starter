@@ -97,15 +97,23 @@
 
     </android.support.design.widget.TextInputLayout>
 
-
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/external_reference_til"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-        tools:text="Lorem ipsum dolor sit amet" />
+        android:layout_below="@id/external_reference_til">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            tools:text="Lorem ipsum dolor sit amet" />
+
+    </ScrollView>
+
+
+
 
 </RelativeLayout>
