@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                     .tax1Type(TAX_1_TYPE)
                     .tax2Amount(tax2)
                     .tax2Type(TAX_2_TYPE)
+                    .printReceipt(true)
                     .externalReference(externalReference)
                     .build();
 
@@ -152,6 +153,9 @@ public class MainActivity extends AppCompatActivity {
                     r.currency().symbol() + " " + r.amount() + "\n" +
                     r.card().pan() + ": " + r.card().holderName() + "\n" +
                     r.description() + "\n";
+            if (r.receipt() != null) {
+                errorString += "\nReceipt" + r.receipt();
+            }
         }
         this.result.setText(errorString);
     }
@@ -167,6 +171,11 @@ public class MainActivity extends AppCompatActivity {
                     result.currency().symbol() + " " + result.amount() + "\n" +
                     result.card().pan() + ": " + result.card().holderName() + "\n" +
                     result.description() + "\n";
+
+            if (result.receipt() != null) {
+                resultString += "\nReceipt" + result.receipt();
+            }
+
             this.result.setText(resultString);
         }
     }

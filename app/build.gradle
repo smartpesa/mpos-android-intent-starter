@@ -1,7 +1,8 @@
 apply plugin: 'com.android.application'
 
 repositories {
-
+    maven { url "https://bitbucket.org/smartpesa/maven/raw/master" }
+    maven { url "https://bitbucket.org/smartpesa/smartpesa-maven/raw/master" }
 }
 
 android {
@@ -28,7 +29,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.1.1'
     compile 'com.android.support:design:24.1.1'
-    compile('com.smartpesa:spconnect:2.2.0') {
+    compile('com.smartpesa:spconnect:2.2.1') {
         changing = true;
     }
 }
