@@ -1,8 +1,130 @@
 # Intent Example: Android
 
-Sample code triggering payment (and void and refund) from a 3rd party calling app using spConnect 2.2.0
+Intent lets developers easily build an Mobile Apps that accepts card payments through SmartPesa mPos platform.
+
+# Add spConnect SDK to your application
+
+To install the library which is used to communicate with SmartPesa, add the following lines to your app/build.gradle file and rebuild your project.
+
+ In your android {...} section add SmartPesa’s SDK Maven repository:
+```
+android {
+    ...
+    repositories {
+        maven { url "https://<smartpesa hosted repository>/maven/raw/master" }
+    }
+    ...
+}
+```
+  
+SmartPesa will provide the repository URL to customers and their 3rd parties to retrieve .aar upon request
+
+Add the following dependency to your dependencies {...} section.
+```
+compile 'com.smartpesa:spconnect:2.2.1'
+```
+
+# Initiating payment
+Important: Before initiating your first Transaction. It's important to setup the Merchant credentials in the SmartPesa spConnect App.
+
+Take a look at the following sample code on how you would start a transaction:
+
+```
+  public void sendTransaction(Activity activity) {
+  // First, check if there's any instance of SmartPesa application installed to handle intent
+    if (SmartPesa.isSmartPesaInstalled(this)) {
+ 
+        // Specify the amount that will be used for the transaction.
+        BigDecimal amount = new BigDecimal("100.00");
+  
+        // Specify the transaction type which will take place.
+        // Currently it only supports SALES, VOID, and REFUND.
+        TransactionType transactionType = TransactionType.SALES;
+ 
+        // Create TransactionArgument object using the provided builder method.
+        TransactionArgument argument = TransactionArgument.builder()
+                .transactionType(transactionType)
+                .amount(amount)
+                .externalReference("abc")
+                .printReceipt(true)
+                .build();
+ 
+        // Create intent from TransactionArgument which will include all the necessary
+        // details of the transaction.
+        Intent intent = SmartPesa.createTransactionIntent(argument);
+ 
+        try {
+  
+            // This will starts SmartPesa activity which will handle your payment request
+            // based on the argument you provided in TransactionArgument object.
+            activity.startActivityForResult(intent, TRANSACTION_REQUEST_CODE);
+ 
+        } catch (ActivityNotFoundException e) {
+  
+            // Unable to find the activity to handle your transaction.
+            // SmartPesa mPos app might has just been recently uninstalled.
+            showMessage("SmartPesa was recently uninstalled.");
+        }
+    } else {
+         
+        // SmartPesa mPos app is not installed in this device.
+        // Unable to start transaction.
+        showMessage("SmartPesa is not installed.");
+ 
+    }
+}
+```
+
+# Payment process
+
+After SmartPesa spConnect App has started, the details of the transaction will be presented to the user. The application will then perform pre-transaction authentication and validation using the Merchant's credential which has already been set in the app. After the authentication and validation step completed, the application will then start the transaction process. After the transaction is finished, it will return to your app and provide the details of the result of the transaction.
+
+# Receiving details of the payment
+
+After SmartPesa spConnect App has finished processing the transaction, it will then return to your app and call the onActivityResult method of the calling activity. Here's how you would handle the transaction result:
+
+```
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+     
+    if (requestCode == TRANSACTION_REQUEST_CODE) {
+     
+        if (data == null) {
+     
+            // This can happen if SmartPesa was uninstalled or crashed while we're waiting for a
+            // result.
+            showMessage("No result from SmartPesa App.");
+     
+        } else if (resultCode == Activity.RESULT_OK) {
+     
+            // Parse successful transaction data.
+            TransactionResult result = SmartPesa.parseSuccesTransaction(data);
+             
+            // Make use of the transaction result however you want.
+            onSuccess(result);
+     
+        } else {
+     
+            // Parse failed transaction data.
+            TransactionError error = SmartPesa.parseErrorTransaction(data);
+  
+            // Make use of the error for debugging.
+            onFail(error);
+     
+        }
+     
+    }
+}
+```
+
+SmartPesa SDK provides 2 methods to parse the result of the transaction depending on whether the transaction succeeded or failed.
+
+When the transaction is successful, TransactionResult will be generated by calling  SmartPesa.parseSuccesTransaction().
+
+When the transaction failed, TransactionError will be generated by calling SmartPesa.parseErrorTransaction().
+
+For details about the request parameters and definition, please check our confluence documentation https://smartpesa.atlassian.net/wiki/spaces/SPD/pages/94076942/Android+Intent
 
 
-# Change Log
 
-Updated spConnect version to v2.2.0
