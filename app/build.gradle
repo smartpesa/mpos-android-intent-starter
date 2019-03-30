@@ -1,17 +1,38 @@
+import org.gradle.authentication.http.BasicAuthentication
+
 apply plugin: 'com.android.application'
 
 repositories {
-
+    maven { url "https://jitpack.io" }
+    maven {
+        url "https://bitbucket.org/smartpesa/smartpesa-maven/raw/master"
+        credentials {
+            username "YOUR_BITBUCKET_USERNAME"
+            password "YOUR_BITBUCKET_PASSWORD"
+        }
+        authentication{
+            basic(BasicAuthentication)
+        }
+    }
+    maven {
+        url "https://bitbucket.org/smartpesa/maven/raw/master"
+        credentials {
+            username "YOUR_BITBUCKET_USERNAME"
+            password "YOUR_BITBUCKET_PASSWORD"
+        }
+        authentication{
+            basic(BasicAuthentication)
+        }
+    }
 }
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "com.smartpesa.sampleintent"
-        minSdkVersion 15
-        targetSdkVersion 24
+        minSdkVersion 22
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -24,11 +45,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.android.support:design:24.1.1'
-    compile('com.smartpesa:spconnect:2.2.1') {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation('com.smartpesa:spconnect:2.2.1') {
         changing = true;
     }
 }
