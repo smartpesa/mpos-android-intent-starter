@@ -5,16 +5,6 @@ apply plugin: 'com.android.application'
 repositories {
     maven { url "https://jitpack.io" }
     maven {
-        url "https://bitbucket.org/smartpesa/smartpesa-maven/raw/master"
-        credentials {
-            username "YOUR_BITBUCKET_USERNAME"
-            password "YOUR_BITBUCKET_PASSWORD"
-        }
-        authentication{
-            basic(BasicAuthentication)
-        }
-    }
-    maven {
         url "https://bitbucket.org/smartpesa/maven/raw/master"
         credentials {
             username "YOUR_BITBUCKET_USERNAME"
