@@ -1,0 +1,138 @@
+SMARTPESA END USER LICENSE AGREEMENT
+
+IMPORTANT: PLEASE READ THIS END USER LICENSE AGREEMENT CAREFULLY
+
+TRANSACTION TECHNOLOGIES PTE. LTD., A SINGAPORE-INCORPORATED COMPANY WITH UNIQUE ENTITY NO. 201414504W AND A REGISTERED ADDRESS AT 1 SCOTTS ROAD SHAW CENTRE SINGAPORE 228208 (“SMARTPESA”) IS WILLING TO LICENSE ITS SYSTEM SOFTWARE COMPRISING MOBILE APPLICATION, READER FIRMWARE, SOFTWARE DEVELOPMENT KIT AND/OR ANY OTHER SOFTWARE OWNED OR LICENCED BY SMARTPESA (THE “SOFTWARE”) TO YOU ONLY UPON THE CONDITION THAT YOU ACCEPT ALL OF THE TERMS AND CONDITIONS CONTAINED IN THIS AGREEMENT.   SMARTPESA AND YOU ARE COLLECTIVELY “PARTIES” TO THIS CONTRACT AND INDIVIDUALLY EACH A “PARTY”.
+
+BY DOWNLOADING, INSTALLING, OR USING THE SOFTWARE, YOU ARE BINDING YOURSELF AND ANY BUSINESS ENTITY THAT YOU REPRESENT TO THIS AGREEMENT. 
+
+IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS AGREEMENT, THEN SMARTPESA IS UNWILLING TO LICENSE THE SOFTWARE TO YOU AND YOU MAY NOT DOWNLOAD, INSTALL OR USE THE SOFTWARE.
+
+BY CONTINUING TO USE THE SOFTWARE YOU HEREBY ACKNOWLEDGE AND ACCEPT THE ALL THE TERMS AND CONDITIONS GOVERNING YOUR ACCESS AND USE OF THE SOFTWARE IN TERMS OF THIS END USER LICENSE AGREEMENT (“EULA” OR “AGREEMENT”).
+
+
+TERMS AND CONDITIONS GOVERNING YOUR ACCESS AND USE OF SOFTWARE
+  
+1. Licence 
+ 
+1.1 Conditioned upon your compliance with all the terms and conditions of this Agreement, SmartPesa grants to you a non-exclusive and non-transferable license to install and use the Software for your internal business purposes. For the purpose of this Agreement, “use”, in relation to the Software, shall mean using, loading and/or running the Software that is hosted, stored or located on any platform or medium that is accessible to or under the possession, custody or control of you. 
+
+1.2 Unless otherwise expressly provided, you shall use the Software solely as installed on non-SmartPesa equipment for your internal business purposes. No other licenses are granted by implication or otherwise. 
+  
+2. Intellectual Property
+
+You acknowledge and agree that:-
+ 
+2.1 the Software is proprietary to SmartPesa, its affiliates, related companies or its licensors or joint venture partners, and the Software and Materials contain intellectual property including proprietary electronics, software and technical information, trade secrets of SmartPesa its affiliates, related companies or its licensors or joint venture partners, the ownership of which shall remain with SmartPesa its affiliates, related companies or its licensors or joint venture partners; and
+
+2.2 title to the media upon which the Software, Materials and  intellectual property is supplied remains with SmartPesa; and
+
+2.3 you grant to SmartPesa on a non-exclusive, worldwide, royalty-free basis, for SmartPesa to fulfil its obligations under this Agreement, the right to use the content from and intellectual property of you (including any trade marks, trade names, domain names, designs and logos), and all rights and licences necessary to host, cache, route, transmit, store, copy, distribute (including distribution through a download functionality), perform, display, reformat, excerpt, analyse and otherwise use such content and intellectual property; and
+
+2.4 you irrevocably agree that any and all improvements created by you or any other party to the Software is the sole property of SmartPesa and you will undertake to complete whatever steps are required in order to effect the transfer of rights over improvements to SmartPesa.
+
+3. Limitations 
+ 
+Except as otherwise expressly provided under this Agreement, you shall have no right, and you specifically agree and undertake not to:-  
+
+3.1 transfer, assign or sub-licence its rights under this Agreement to any other person or entity, or use the Software or any part thereof on unauthorized equipment, and you acknowledges that any attempted transfer, assignment, sub-licence or use shall be void; or
+
+3.2 make error corrections to or otherwise modify or adapt the Software or create derivative works based upon the Software, or permit third parties to do the same, unless expressly authorised by SmartPesa; or
+
+3.3 reverse engineer, decompile, disassemble, translate, copy, modify, alter or otherwise change the Software in whole or in part, or obtain the source code for the Software by any means, without SmartPesa’s prior written consent; or
+
+3.4 use or permit the Software to be used to perform services for third parties, without the express written authorisation of SmartPesa; or 
+
+3.5 alter any of SmartPesa’s or any customer of SmartPesa’s trade marks, service marks, trade names, logos, patent or copyright notices or other markings, or add any other notices or markings without SmartPesa’s prior written consent; or
+
+3.6 disclose, provide, or otherwise make available intellectual property and trade secrets contained within the Software in any form to any third party without the prior written consent of SmartPesa. you shall ensure confidentiality, and implement reasonable security measures to protect intellectual property and trade secrets in and to the Software. 
+ 
+4. Hosting and Installation
+
+you shall be solely responsible for:- 
+
+4.1 the set-up, configuration and hosting of the Software including obtaining and maintaining all computer hardware, software, communications software, network and other infrastructure (“Hosting Infrastructure”) necessary to use the Software; and
+
+4.2 the use of, and any actions taken in relation to, the Software on Hosting Infrastructure by any user; and
+
+4.3 all data and information maintained or stored in the Hosting Infrastructure (“Hosted Data”); and
+
+4.4 the content and use of all Hosted Data and will indemnify SmartPesa for any losses incurred as a result of such Hosted Data.  
+
+5. Consent to use of your Data 
+ 
+you agree that SmartPesa and its subsidiaries, affiliates may collect, use and disclose:- 
+
+5.1 technical and related information, including technical information about your Hosting Infrastructure, that is gathered periodically to facilitate the provision of software updates and other services (if any) to you related to the Software, or to improve the Software and products of SmartPesa; and
+
+5.2 data including personal data generated and/or accumulated in connection with the use of the Software by you for any purpose in terms of the SmartPesa privacy policy.
+
+6.  Proprietary Notices 
+ 
+you agree to maintain and reproduce all copyright and other proprietary notices on all copies, in any form, of the Software in the same form and manner that such copyright and other proprietary notices are included on the Software. You shall not alter or remove any of SmartPesa’s or its licensors’ copyright notices or other designations that appear or may appear in or on the Software. Except as expressly authorized in this Agreement, you shall not make any copies or duplicates of any Software without the prior written permission of SmartPesa. 
+
+7. Term and Termination 
+ 
+7.1 This Agreement and the license granted herein shall remain effective until terminated by the provisions in this Clause 7. 
+
+7.2 This Agreement and your rights under this Agreement will automatically terminate without notice from SmartPesa if you fail to comply with any term of this Agreement.
+
+7.3 Upon termination, you shall destroy all copies of Software in its possession, custody or control. All confidentiality obligations of you and all limitations of liability and disclaimers and restrictions of warranty shall survive termination of this Agreement.
+  
+8. NO WARRANTY 
+
+8.1 YOU EXPRESSLY AGREE THAT THE USE OF THE SOFTWARE IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, SATISFACTORY QUALITY, NON-INTERFERENCE, ACCURACY IS WITH YOU.  
+
+8.2 THE SOFTWARE IS PROVIDED "AS IS" WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND. SUBJECT TO CLAUSE 8.3 BELOW, YOUR SOLE AND EXCLUSIVE REMEDY AND THE ENTIRE LIABILITY OF SMARTPESA UNDER THIS AGREEMENT WILL BE AT SMARTPESA'S OPTION, REPAIR OR REPLACE THE SOFTWARE AND SUBJECT ALWAYS TO THE CONDITION THAT ANY ERROR OR DEFECT IS REPORTED TO SMARTPESA IN WRITING WITHIN ONE MONTH UPON INSTALLATION AND YOU HAVE COMPLIED WITH THE REQUIREMENTS AND SPECIFICATIONS FROM SMARTPESA ON THE USE OF THE SOFTWARE.
+ 
+8.3 YOUR SOLE AND EXCLUSIVE REMEDY IN CLAUSE 8.2 ABOVE DOES NOT APPLY IF THE SOFTWARE, OR ANY EQUIPMENT UPON WHICH THE SOFTWARE IS AUTHORIZED TO BE USED, (I) HAS BEEN ALTERED, EXCEPT BY SMARTPESA OR ITS AUTHORIZED REPRESENTATIVE, (II) HAS NOT BEEN INSTALLED, OPERATED, REPAIRED, OR MAINTAINED IN ACCORDANCE WITH INSTRUCTIONS SUPPLIED BY SMARTPESA, (III) HAS BEEN SUBJECTED TO ABNORMAL PHYSICAL OR ELECTRICAL STRESS, ABNORMAL ENVIRONMENTAL CONDITIONS, MISUSE, NEGLIGENCE, OR ACCIDENT; OR (IV) IS LICENSED FOR BETA, EVALUATION, TESTING OR DEMONSTRATION PURPOSES. YOUR SOLE AND EXCLUSIVE REMEDY IN CLAUSE ALSO DOES NOT APPLY TO ANY SOFTWARE FOR WHICH YOU HAS NOT PAID A LICENCE FEE. 
+
+8.4 IN NO EVENT DOES SMARTPESA WARRANT THAT THE SOFTWARE IS ERROR FREE OR THAT YOU WILL BE ABLE TO OPERATE THE SOFTWARE WITHOUT PROBLEMS OR INTERRUPTIONS. IN ADDITION, DUE TO THE CONTINUAL DEVELOPMENT OF NEW TECHNIQUES FOR INTRUDING UPON AND ATTACKING NETWORKS, SMARTPESA DOES NOT WARRANT THAT THE SOFTWARE OR ANY EQUIPMENT, SOFTWARE OR NETWORK ON WHICH THE SOFTWARE IS USED WILL BE FREE OF VULNERABILITY TO INTRUSION OR ATTACK. 
+
+9. DISCLAIMER
+ 
+TO THE FULLEST EXTENT ALLOWED BY LAW, ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS, AND WARRANTIES INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTY OR CONDITION OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, SATISFACTORY QUALITY, NON-INTERFERENCE, ACCURACY OF INFORMATIONAL CONTENT, OR ARISING FROM A COURSE OF DEALING, LAW, USAGE, OR TRADE PRACTICE, ARE HEREBY EXCLUDED AND ARE EXPRESSLY DISCLAIMED BY SMARTPESA AND ITS LICENSORS. 
+ 
+10. LIMITATION AND EXCLUSION OF LIABILITY 
+ 
+NOTWITHSTANDING ANYTHING ELSE IN THIS AGREEMENT TO THE CONTRARY, AND TO THE FULLEST EXTENT ALLOWED BY LAW:-
+
+10.1 THE MAXIMUM CUMULATIVE LIABILITY OF SMARTPESA TO YOU, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), BREACH OF WARRANTY OR OTHERWISE, SHALL NOT EXCEED SINGAPORE ONE DOLLAR, AND THIS LIMITATION OF LIABILITY IS CUMULATIVE AND NOT PER INCIDENT (I.E. THE EXISTENCE OF TWO OR MORE CLAIMS WILL NOT ENLARGE THIS LIMIT); AND 
+
+10.2 UNDER NO CIRCUMSTANCES WILL SMARTPESA BE LIABLE TO YOU FOR ANY CONSEQUENTIAL, INDIRECT, PUNITIVE, INCIDENTAL OR SPECIAL DAMAGES, WHETHER FORESEEABLE OR UNFORESEEABLE (AND WHETHER OR NOT THEY OR ANYONE ELSE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), WHETHER BASED UPON BUSINESS INTERRUPTION, LOST GOODWILL, LOST PROFITS, LOSS OF USE, LOSS OF REVENUE OR MONEY, DATA LOSS, DATA DAMAGE OR INTERRUPTION IN ITS USE OR AVAILABILITY, STOPPAGE OF WORK, IMPAIRMENT OF ASSETS OR OTHERWISE ARISING OUT OF BREACH OF ANY EXPRESS OR IMPLIES WARRANTY, BREACH OF CONTRACT, NEGLIGENCE, MISREPRESENTATION, STRICT LIABILITY IN TORT OR OTHERWISE.
+  
+11. Governing Law 
+
+This Agreement and any dispute or claim arising out of or in connection with it or its subject matter or formation (including non-contractual disputes or claims) shall be governed by, interpreted and construed in accordance with the laws of the Republic of Singapore.
+
+12. Miscellaneous 
+
+12.1 Nothing in this Agreement will constitute or be deemed to constitute a partnership, joint venture or agency between the Parties.
+
+12.2 This Agreement and all its terms constitute the entire agreement of the Parties concerning its subject matter, and supersedes all prior understandings, prior representations, agreements, arrangements or commitments between the Parties.
+
+12.3 No waiver of any right or remedy will be effective unless in writing and shall not operate as a waiver of that right or remedy or any other right or remedy on a future occasion.  
+
+12.4 Any implied term under law that can be excluded is hereby expressly excluded and no term is to be implied as being a term of this Agreement unless by law it cannot be excluded.
+
+12.5 Neither Party may assign, delegate or otherwise convey any rights or duties under this Agreement to any third parties without the prior written consent of the other Party. 
+
+12.6 This Agreement and any of its obligations may be varied only by an instrument signed by or on behalf of the Parties.
+
+12.7 In the event that any of the provisions of this Agreement shall be held to be invalid or unenforceable in whole or in part, those provisions to the extent enforceable and all other provisions shall nevertheless continue to be valid and enforceable as though the invalid or unenforceable parts had not been included in this Agreement.
+
+12.8 The Parties agree that: 
+
+(i) Subject to Clause 12.8(ii) below, a person who is not a party to this Agreement shall have no right to enforce any term in this Agreement a person who is not a party to this Agreement has no right under the Contracts (Rights of Third Parties) Act (Cap. 53B) to enforce any term of this Agreement; and
+
+(ii) SmartPesa’s licensors identified in the Software, or otherwise disclosed by SmartPesa to you pursuant to this Agreement are third party beneficiaries of this Agreement, with the right to enforce the terms in this Agreement and obtain the benefit of the rights, acknowledgements, undertakings, warranties and indemnities granted to SmartPesa under this Agreement as third party beneficiaries in accordance with the Contracts (Rights of Third Parties) Act (Cap. 53B) ("Third Party Beneficiaries") and that this Agreement is intended to be enforceable by each of the Third Party Beneficiaries by virtue of the Contracts (Rights of Third Parties) Act (Cap. 53B); and
+
+(iii) SmartPesa will be entitled to vary or terminate this Agreement (on the terms set out in this Agreement) without the consent of the Third Party Beneficiaries.
+
+12.9 The rights and remedies provided by this Agreement are cumulative and are not exclusive of any rights or remedies provided by law. Each Party acknowledges that remedies at law may be inadequate to protect the other Party against any breach of this Agreement. Without prejudice to any other rights and remedies otherwise available, each Party agrees not to oppose the granting of injunctive relief in favour of the other Party on the grounds of failure to prove actual damage.
+
+
+******
+
+18 September 2019
+
